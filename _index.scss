@@ -1,0 +1,335 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    
+}
+.header{
+    height: 120px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__label_text{
+        color: rgb(69, 64, 61);
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__menuButtom{
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+    }
+    &__link{
+        color: rgb(69, 64, 61);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__button{
+        width: 169px;
+        height: 52px;
+        background-color: white;
+        box-sizing: border-box;
+        border: 1px solid rgb(162, 101, 57);
+        border-radius: 24px;
+        padding: 16px 36px 16px 36px;
+        font-family: inherit;
+        color: rgb(162, 101, 57);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__content{
+        position: relative;
+        overflow: hidden;
+        padding-top: 118.85px;
+        height: 670px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+    }
+    &__content_title{
+        width: 570px;
+        z-index: 3;
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__content_minTitle{
+        width: 499px;
+        z-index: 3;
+    }
+    &__content_text{
+        width: 499px;
+        z-index: 3;
+    }
+    &__content_button{
+        width: 366px;
+        height: 52px;
+        margin-top: 16px;
+        padding: 16px 36px 16px 36px;
+        box-sizing: border-box;
+        border: 1px solid rgb(162, 101, 57);
+        border-radius: 24px;
+        color: rgb(162, 101, 57);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        z-index: 2;
+    }
+    &__img{
+        position:absolute;
+        z-index: 1;
+        left: 45.5%;
+        top: -32px;
+    }
+    &__coffee{
+        position: absolute;
+        left: 0%;
+        top: 23px;
+    }
+    &__grains{
+        position: absolute;
+        left: 34%;
+        top: 108px;
+    }
+    &__Cookie{
+        position: absolute;
+        left: 1%;
+        top: 419px;
+    }
+    &__Cinnabon{
+        position: absolute;
+        left: 23%;
+        top: 253px;
+    }
+}
+
+.aboutUs{
+    //background-color: rgb(192, 226, 255);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    &__title{
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 48px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    &__cart{
+        width: 584px;
+        height: 292px;
+        border-radius: 24px 24px 24px 0px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+    &__cartContent{
+        padding: 20px;
+    }
+    &__cartTitle{
+        color: rgb(69, 64, 61);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__cartText{
+        color: rgb(69, 64, 61);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+.menu{
+    //background-color: rgb(192, 192, 192);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    &__titleBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__titleBoxBu{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+    &__button{
+        width: 120px;
+        height: 45px;
+        background-color: white;
+        box-sizing: border-box;
+        border: 1px solid rgb(162, 101, 57);
+        border-radius: 24px;
+        color: rgb(162, 101, 57);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    &__title{
+        margin-bottom: 48px;
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__cart{
+        width: 276px;
+        height: 432px;
+        border-radius: 24px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+        background: rgb(255, 255, 255);
+    }
+    &__cartContent{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    &__cartPrise{
+        color: rgb(69, 64, 61);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__cartText{
+        color: rgb(69, 64, 61);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__cartMl{
+        color: rgb(154, 154, 154);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+.reviews{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    &__title{
+        margin-bottom: 48px;
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    &__cart{
+        width: 338px;
+        height: 165px;
+        padding: 20px;
+        border-radius: 24px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    &__cartImg{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    &__cartTitle{
+        color: rgb(69, 64, 61);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__cartText{
+        color: rgb(69, 64, 61);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+
+
