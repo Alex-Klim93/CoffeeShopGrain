@@ -14,45 +14,50 @@
 <body>
     <div class="top center">
         <header class="header">
-            <div class="header__label">
-                <h3 class="header__label_text">Зернышко</h3>
-            </div>
-            <div class="header__menuButtom"></div>
-                    <ul class="header__menu">
-                        <li class="header__link"><a href="">О нас</a></li>
-                        <li class="header__link"><a href="">Меню</a></li>
-                        <li class="header__link"><a href="">Отзывы</a></li>
-                        <li class="header__link"><a href="">Контакты</a></li>
-                        <button class="header__button">Связаться</button>
-                    </ul>
-                    
-            </div>
-            <div class="header__content center">
-                <h1 class="header__content_title">Добро пожаловать в «Зернышко»</h1>
-                <h3 class="header__content_minTitle">Ароматный кофе и уютная атмосфера каждый день</h3>
-                <p class="header__content_text">Мы готовим кофе с душой и верим, что каждая чашка — это маленькое наслаждение, созданное для вас. 
-                    Мы предлагаем свежие зерна, уникальные авторские рецепты и заботу о природе. Наши бариста рады подарить вам вкус и уют, из-за которых захочется возвращаться снова и снова.</p>
-                <button class="header__content_button">Посмотреть меню</button>
-                <div class="header__img">
-                    <img src="img/header.png" alt="Доска">
-                    <div class="header__coffee">
-                        <img src="img/Cup Of Coffee.B15.2k.png" alt="">
-                    </div>
-                    <div class="header__grains">
-                        <img src="img/Зерна.png" alt="">
-                    </div>
-                    <div class="header__Cookie">
-                        <img src="img/Печенье.png" alt="">
-                    </div>
-                    <div class="header__Cinnabon">
-                        <img src="img/Синабон.png" alt="">
-                    </div>
+            <div class="header__menu header__menuFix center">
+                <div class="header__label">
+                    <h3 class="label">Зернышко</h3>
                 </div>
+                <div class="header__menuButtom"></div>
+                <ul class="header__menuLink">
+                    <li class="header__link"><a href="#aboutUs">О нас</a></li>
+                    <li class="header__link"><a href="#menu">Меню</a></li>
+                    <li class="header__link"><a href="#reviews">Отзывы</a></li>
+                    <li class="header__link"><a href="#search">Контакты</a></li>
+                    <a href="#search"><button class="header__button">Связаться</button></a>
+                </ul>
             </div>
-        </header>
+        </header> 
+            <div class="header__content center">
+                    <div class="header__description">
+                        <h1 class="header__content_title">Добро пожаловать в «Зернышко»</h1>
+                        <h3 class="header__content_minTitle">Ароматный кофе и уютная атмосфера каждый день</h3>
+                        <p class="header__content_text">Мы готовим кофе с душой и верим, что каждая чашка — это маленькое наслаждение, созданное для вас. 
+                            Мы предлагаем свежие зерна, уникальные авторские рецепты и заботу о природе. Наши бариста рады подарить вам вкус и уют, из-за которых захочется возвращаться снова и снова.</p>
+                        <a href="#menu"><button class="header__content_button" >Посмотреть меню</button></a>
+                    </div>
+                    <div class="header__img">
+                        <div class="header__imgG">
+                            <img src="img/header.png" alt="Доска">
+                        </div>
+                        <div class="header__coffee rotation">
+                            <img src="img/Cup Of Coffee.B15.2k.png" alt="">
+                        </div>
+                        <div class="header__grains">
+                            <img src="img/Зерна.png" alt="">
+                        </div>
+                        <div class="header__Cookie rotation">
+                            <img src="img/Печенье.png" alt="">
+                        </div>
+                        <div class="header__Cinnabon rotation">
+                            <img src="img/Синабон.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        
     </div>
 
-    <section class="aboutUs center">
+    <section class="aboutUs center" id="aboutUs">
         <h3 class="aboutUs__title">О нас</h3>
         <div class="aboutUs__box">
             <div class="aboutUs__cart">
@@ -99,7 +104,7 @@
         </div>
     </section>
 
-    <Section class="menu center">
+    <Section class="menu center" id="menu">
         <div class="menu__titleBox">
             <h3 class="menu__title">Меню</h3>
             <div class="menu__titleBoxBu">
@@ -192,7 +197,7 @@
         </div>
     </Section>
 
-    <Section class="reviews center">
+    <Section class="reviews center" id="reviews">
         <div class="reviews__titleBox">
             <h3 class="reviews__title">Отзывы</h3>
         </div>
@@ -204,41 +209,11 @@
                     </div>
                     <div>
                         <p class="reviews__cartTitle">Ирина</p>
-                            <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                            </svg>
-                            <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                            </svg>
-                            <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                            </svg>
-                            <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                            </svg>
-                            <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                            </svg>
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
                     </div>
                 </div>
                 <div class="reviews__cartContent">
@@ -252,41 +227,11 @@
                         </div>
                         <div>
                             <p class="reviews__cartTitle">Игорь</p>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
                         </div>
                     </div>
                     <div class="reviews__cartContent">
@@ -301,41 +246,11 @@
                         </div>
                         <div>
                             <p class="reviews__cartTitle">Александр</p>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
                         </div>
                     </div>
                     <div class="reviews__cartContent">
@@ -349,41 +264,11 @@
                             </div>
                             <div>
                                 <p class="reviews__cartTitle">Эльза</p>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
                             </div>
                         </div>
                         <div class="reviews__cartContent">
@@ -398,41 +283,11 @@
                             </div>
                             <div>
                                 <p class="reviews__cartTitle">Андрей</p>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
-                                    <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
                             </div>
                         </div>
                         <div class="reviews__cartContent">
@@ -447,41 +302,11 @@
                         </div>
                         <div>
                             <p class="reviews__cartTitle">Кристина</p>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                <svg width="21.784698" height="20.817139" viewBox="0 0 21.7847 20.8171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs/>
-                                    <path id="Star 1" d="M9.94 0.67L7.95 6.39C7.82 6.78 7.45 7.06 7.03 7.06L0.98 7.18C0.03 7.2 -0.36 8.41 0.39 8.98L5.22 12.64C5.55 12.89 5.69 13.32 5.57 13.72L3.82 19.52C3.54 20.43 4.57 21.17 5.35 20.63L10.32 17.17C10.66 16.93 11.12 16.93 11.46 17.17L16.43 20.63C17.21 21.17 18.23 20.43 17.96 19.52L16.2 13.72C16.08 13.32 16.22 12.89 16.56 12.64L21.38 8.98C22.14 8.41 21.75 7.2 20.8 7.18L14.74 7.06C14.33 7.06 13.96 6.78 13.82 6.39L11.83 0.67C11.52 -0.23 10.25 -0.23 9.94 0.67Z" fill="#FFCC00" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
                         </div>
                     </div>
                     <div class="reviews__cartContent">
@@ -494,13 +319,93 @@
         </div>
     </Section>
     
-        
+    <section class="search center" id="search">
+        <h3 class="search__title">Как нас найти</h3>
+        <div class="search__box">
+            <div class="search__menu">
+                <div class="search__contact">
+                    <h3 class="search__contact_title">Контакты</h3>
+                    <div class="search__contact_box">
+                        <div class="search__contact_inf">
+                            <!-- <img class="contactEffect" src="img/call.png" alt=""> -->
+                            <div class="contactEffect"><svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M9.2 12.45L7.66 14C7.34 14.32 6.82 14.32 6.49 14C6.4 13.91 6.3 13.83 6.21 13.74C5.35 12.87 4.58 11.96 3.89 11.01C3.2 10.06 2.65 9.11 2.25 8.17C1.86 7.22 1.66 6.31 1.66 5.45C1.66 4.88 1.76 4.34 1.96 3.84C2.16 3.33 2.48 2.86 2.92 2.45C3.45 1.92 4.04 1.66 4.65 1.66C4.89 1.66 5.12 1.71 5.33 1.81C5.55 1.91 5.74 2.06 5.89 2.28L7.82 5C7.97 5.21 8.08 5.4 8.15 5.59C8.23 5.76 8.27 5.94 8.27 6.1C8.27 6.3 8.21 6.5 8.1 6.69C7.99 6.88 7.83 7.08 7.63 7.28L7 7.94C6.9 8.03 6.86 8.14 6.86 8.27C6.86 8.34 6.87 8.4 6.89 8.46C6.91 8.53 6.94 8.58 6.95 8.63C7.1 8.9 7.36 9.26 7.73 9.7C8.1 10.13 8.5 10.57 8.94 11.01C9.02 11.1 9.11 11.18 9.2 11.26C9.53 11.59 9.54 12.12 9.2 12.45Z" fill="#45403D" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M18.3 15.27C18.3 15.5 18.26 15.75 18.18 15.98C18.15 16.04 18.13 16.11 18.1 16.18C17.95 16.48 17.77 16.76 17.53 17.03C17.12 17.48 16.67 17.8 16.16 18.01C16.15 18.01 16.15 18.02 16.14 18.02C15.65 18.22 15.11 18.33 14.54 18.33C13.69 18.33 12.78 18.13 11.82 17.72C10.86 17.31 9.9 16.76 8.95 16.07C8.63 15.83 8.3 15.59 8 15.33L10.72 12.6C10.95 12.78 11.16 12.91 11.34 13C11.38 13.02 11.43 13.05 11.49 13.07C11.55 13.09 11.62 13.1 11.7 13.1C11.84 13.1 11.95 13.05 12.04 12.96L12.67 12.34C12.88 12.13 13.08 11.97 13.27 11.87C13.46 11.75 13.65 11.7 13.86 11.7C14.02 11.7 14.19 11.73 14.37 11.8C14.55 11.88 14.75 11.99 14.95 12.13L17.71 14.09C17.93 14.24 18.08 14.41 18.17 14.62C18.25 14.83 18.3 15.04 18.3 15.27Z" fill="#45403D" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <g opacity="0.000000"/>
+                            </svg></div> 
+                            
+                            <a class="contactEffect" href="tel:+79999999999">+7 (999) 999 99-99</a>
+                        </div>
+                        <div class="search__contact_inf">
+                            <!-- <img class="contactEffect" src="img/vuesax_bold_sms.png" alt=""> -->
+                            <svg class="contactEffect" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <g opacity="0.000000"/>
+                                <path id="Vector" d="M14.16 2.91L5.83 2.91C3.33 2.91 1.66 4.16 1.66 7.08L1.66 12.91C1.66 15.83 3.33 17.08 5.83 17.08L14.16 17.08C16.66 17.08 18.33 15.83 18.33 12.91L18.33 7.08C18.33 4.16 16.66 2.91 14.16 2.91ZM14.55 7.99L11.95 10.07C11.4 10.51 10.7 10.73 10 10.73C9.3 10.73 8.59 10.51 8.05 10.07L5.44 7.99C5.17 7.77 5.13 7.37 5.34 7.1C5.55 6.84 5.95 6.79 6.21 7L8.82 9.09C9.45 9.6 10.53 9.6 11.16 9.09L13.77 7C14.04 6.79 14.44 6.83 14.65 7.1C14.86 7.37 14.82 7.77 14.55 7.99Z" fill="#45403D" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+                            
+                            <a class="contactEffect" href="mailto:zernyshko@mail.ru">zernyshko@mail.ru</a>
+                        </div>
+                        <div class="search__contact_inf">
+                            <!-- <img class="contactEffect" src="img/vuesax_bold_location.png" alt=""> -->
+                            <svg class="contactEffect" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.18 7.04C16.3 3.19 12.95 1.45 10 1.45C10 1.45 10 1.45 9.99 1.45C7.05 1.45 3.68 3.18 2.8 7.03C1.83 11.33 4.46 14.97 6.85 17.26C7.73 18.11 8.86 18.54 10 18.54C11.13 18.54 12.26 18.11 13.14 17.26C15.52 14.97 18.15 11.34 17.18 7.04ZM10 11.21C8.55 11.21 7.37 10.04 7.37 8.59C7.37 7.14 8.55 5.96 10 5.96C11.45 5.96 12.62 7.14 12.62 8.59C12.62 10.04 11.45 11.21 10 11.21Z" fill="#45403D" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <g opacity="0.000000"/>
+                                <g opacity="0.000000"/>
+                            </svg>
+                            
+                            <a class="contactEffect" class="search__contact_inf address"  href="#dd">набережная канала Грибоедова, 23</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__form">
+                    <h3 class="search__contact_title">Бронирование</h3>
+                    <div class="search__form_box">
+                        <input class="search__form_input" id="input" type="name" value="Ваше имя">
+                        <input class="search__form_input" id="input" type="phon" value="Ваш номер телефона">
+                        <input class="search__form_input" id="input" type="text" value="Комментарий">
+                    </div>
+                    <button class="search__button" id="button">Забронировать</button>
+                </div>
+            </div>
+            <div class="search__map" id="search__map">
+            </div>
+        </div>
+    </section>
 
     <footer class="footer center">
-        
+        <div class="footer__label">
+            <h3 class="label">Зернышко</h3>
+            <p class="footer__age">© 2025 Все права защищены</p>
+        </div>
+        <div class="footer__menu_box">
+            <div class="header__menuButtom">
+                    <ul class="header__menu">
+                        <li class="header__link"><a href="">О нас</a></li>
+                        <li class="header__link"><a href="">Меню</a></li>
+                        <li class="header__link"><a href="">Отзывы</a></li>
+                        <li class="header__link"><a href="">Контакты</a></li>
+                    </ul>
+            </div>
+            <div class="footer__icon">
+                <img src="img/icon-vk-seeklogo 1.png" alt="">
+                <img src="img/Group.png" alt="">
+            </div>
+        </div>
     </footer>
 
-
+    <script src="js.js"></script>
 </body>
 
 </html>

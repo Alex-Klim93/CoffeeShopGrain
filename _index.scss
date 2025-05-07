@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    
+}
 li {
     list-style-type: none; /* Убираем маркеры */
   }
@@ -15,7 +17,6 @@ a {
 
 body {
     font-family: "Montserrat Alternates", sans-serif;
-    
 }
 
 .center {
@@ -24,30 +25,51 @@ body {
 }
 
 .top {
-    
+}
+.label{
+    color: rgb(69, 64, 61);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
 }
 .header{
     height: 120px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    &__label_text{
-        color: rgb(69, 64, 61);
-        font-size: 32px;
-        font-weight: 800;
-        line-height: 39px;
-        letter-spacing: 0px;
-        text-align: left;
-        text-transform: uppercase;
+    &__menuFix{
+        position: fixed;
+        height: 120px;
+        left: 0%;
+        right: 0%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 1px; */
+        z-index: 10;
+    }
+    &__menu{
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    &__description{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
     &__menuButtom{
         display: flex;
         flex-direction: row;
         gap: 48px;
     }
-    &__menu{
+    &__menuLink{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -79,14 +101,13 @@ body {
         text-align: left;
     }
     &__content{
+        height: 670px;
+        padding-top: 118.85px;
+        display: flex;
+        flex-direction:row;
         position: relative;
         overflow: hidden;
-        padding-top: 118.85px;
-        height: 670px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        
+
     }
     &__content_title{
         width: 570px;
@@ -96,14 +117,13 @@ body {
         line-height: 59px;
         letter-spacing: 0px;
         text-align: left;
+        
     }
     &__content_minTitle{
         width: 499px;
-        z-index: 3;
     }
     &__content_text{
         width: 499px;
-        z-index: 3;
     }
     &__content_button{
         width: 366px;
@@ -118,34 +138,41 @@ body {
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0px;
+        font-family: inherit;
         text-align: center;
-        z-index: 2;
     }
     &__img{
-        position:absolute;
+        position: relative;
+    }
+    &__imgG{
+        position: absolute;
+        left: -53px;
+        top: -26%;
         z-index: 1;
-        left: 45.5%;
-        top: -32px;
     }
     &__coffee{
         position: absolute;
-        left: 0%;
-        top: 23px;
+        left: -50px;
+        top: -23%;
+        z-index: 2;
     }
     &__grains{
         position: absolute;
-        left: 34%;
-        top: 108px;
+        left: 365px;
+        top: -10%;
+        z-index: 2;
     }
     &__Cookie{
         position: absolute;
-        left: 1%;
-        top: 419px;
+        left: -38px;
+        top: 37%;
+        z-index: 2;
     }
     &__Cinnabon{
         position: absolute;
-        left: 23%;
-        top: 253px;
+        left: 228px;
+        top: 12%;
+        z-index: 2;
     }
 }
 
@@ -153,6 +180,7 @@ body {
     //background-color: rgb(192, 226, 255);
     padding-top: 64px;
     padding-bottom: 64px;
+
     &__title{
         color: rgb(69, 64, 61);
         font-size: 48px;
@@ -175,8 +203,11 @@ body {
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
         background: rgb(255, 255, 255);
         overflow: hidden;
-        display: flex;
-        flex-direction: row;
+        display: grid; /* Заменено на grid */
+        grid-template-columns: 1fr 1fr; /* Две равные колонки */
+    }
+    &__cartImg{
+        overflow: hidden;
     }
     &__cartContent{
         padding: 20px;
@@ -248,6 +279,12 @@ body {
         border-radius: 24px;
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
         background: rgb(255, 255, 255);
+        display: grid; /* Заменено на grid */
+        grid-template-rows: 1fr 1fr; /* Две равные колонки */
+        overflow: hidden;
+    }
+    &__cartImg{
+        overflow: hidden;
     }
     &__cartContent{
         padding: 20px;
@@ -331,5 +368,137 @@ body {
         text-align: left;
     }
 }
+.search{
+        padding-top: 64px;
+        padding-bottom: 64px;
+        
+    &__title{
+        margin-bottom: 48px;
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap:32px;
+    }
+    &__menu{
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__contact{
+        padding: 20px;
+        border-radius: 24px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+        background: rgb(255, 255, 255);
+    }
+    &__contact_title{
+        margin-bottom: 24px;
+        color: rgb(69, 64, 61);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__contact_box{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__contact_inf{
+        color: rgb(69, 64, 61);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    &__form{
+        padding: 20px;
+        border-radius: 24px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+        background: rgb(255, 255, 255);
+    }
+    &__form_box{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    &__form_input{
+        width: 339px;
+        height: 47px;
+        padding: 0 24px 0 24px;
+        box-sizing: border-box;
+        border: 1px solid rgb(222, 222, 222);
+        border-radius: 24px;
+        color: rgb(154, 154, 154);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;    
+        transition: opacity 0.5s ease;
+    }
+    .cleared {
+        opacity: 0.5; /* Полупрозрачное состояние при очистке */
+    }
+    &__button{
+        width: 339px;
+        height: 47px;
+        margin-top: 24px;
+        box-sizing: border-box;
+        background-color: white;
+        border: 1px solid rgb(162, 101, 57);
+        border-radius: 24px;
+        color: rgb(162, 101, 57);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__map{
+        grid-column: span 8;
+        overflow: hidden;
+        border-radius: 24px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+        background: rgb(222, 222, 222);
+    }
+}
 
 
+.footer{
+    height: 156px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__label{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__menu_box{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+    &__icon{
+        display: flex;
+        justify-content: right;
+        gap: 14px;
+    }
+}

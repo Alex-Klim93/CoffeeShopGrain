@@ -5,16 +5,29 @@ button:hover{
     background: rgb(162, 101, 57);
     color: rgb(255, 255, 255);
     font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0px;
     text-align: center;
 }
 
+.rotation {
+    transform-origin: center center; /* Центр картинки */
+    transition: transform 2s ease; /* Плавный переход */
+}
+.rotation:hover {
+    transform: rotate(360deg); /* Вращение на 360 градусов */
+}
+.contactEffect:hover {
+    color: rgb(162, 101, 57);
+}
+.contactEffect{
+    cursor: pointer;
+}
+.contactEffect:hover path {
+    fill: rgb(162, 101, 57); /* Цвет при наведении */
+}
+
+
+
 @import "index";
-@import "catalog";
-@import "cart";
 @import "tablet";
 @import "mobile";
 
